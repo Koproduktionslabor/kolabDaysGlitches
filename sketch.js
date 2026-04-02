@@ -14,7 +14,7 @@ function setup() {
 	imageMode(CENTER);
 
 	glitch = new Glitch();
-	loadImage('CI24_Logo_R01_2.jpg', function (im) {
+	loadImage('WORKSHOP_HEADER.jpg', function (im) {
 		glitch.loadImage(im);
 	});
 	glitch.pixelate(1);
