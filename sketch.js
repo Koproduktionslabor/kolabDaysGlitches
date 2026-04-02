@@ -7,13 +7,14 @@ var w = window.innerWidth;
 var h = window.innerHeight;
 
 function setup() {
+	frameRate(5);
 	pixelDensity(1);
 	canvas = createCanvas(w, h);
 	background(0);
 	imageMode(CENTER);
 
 	glitch = new Glitch();
-	loadImage('CI24_Logo_R01_2.png', function (im) {
+	loadImage('CI24_Logo_R01_2.jpg', function (im) {
 		glitch.loadImage(im);
 	});
 	glitch.pixelate(1);
@@ -34,6 +35,7 @@ function draw() {
 		console.log("EEEEE")
 	} else {
 		glitch.limitBytes(map(mouseY, 0, height, 0, 1))
+		
 	}
 
 
