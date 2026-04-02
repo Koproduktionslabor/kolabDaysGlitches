@@ -19,7 +19,7 @@ function setup() {
 	});
 	glitch.pixelate(1);
 	glitch.loadQuality(.01);
-	glitch.loadType('webp');
+	glitch.loadType('jpg');
 }
 
 function draw() {
