@@ -23,7 +23,7 @@ function setup() {
 }
 
 function draw() {
-
+ 	clear();
 	glitch.resetBytes();
 
 	glitch.replaceBytes(10, 54); // swap all decimal byte 100 for 104
@@ -41,7 +41,7 @@ function draw() {
 
 
 	image(glitch.image, width / 2, height / 2, glitch.width, glitch.height)
-	textSize(20);
+	textSize(30);
 	fill(255);
   stroke(0);
   strokeWeight(1)
