@@ -42,6 +42,14 @@ function draw() {
 
 	image(glitch.image, width / 2, height / 2, glitch.width, glitch.height)
 
+	fill(255);
+  stroke(0);
+  strokeWeight(1)
+  text('Hier klicken zur Workshop Anmeldung', mouseX,mouseY)
+  if(mouseIsPressed){
+  window.open('https://docs.google.com/forms/d/e/1FAIpQLSfE7wpo8ttwTsKU3PYhG_rnoAbmYuUYvpe2wQDR07OHxx8Jiw/viewform'); 
+  }
+
 }
 
 window.onresize = function () {
