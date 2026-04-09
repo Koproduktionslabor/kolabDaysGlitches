@@ -41,7 +41,7 @@ function draw() {
 
 
 	image(glitch.image, width / 2, height / 2, glitch.width, glitch.height)
-
+	textSize(20);
 	fill(255);
   stroke(0);
   strokeWeight(1)
